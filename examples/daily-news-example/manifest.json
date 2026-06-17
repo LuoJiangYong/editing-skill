@@ -1,0 +1,308 @@
+{
+  "schema_version": "1.0.0",
+  "content_package_id": "daily-news-2026-06-17-e4f5a6",
+  "metadata": {
+    "title": "AI 科技日报 | 2026年6月17日",
+    "subtitle": "OpenAI 调整定价、Meta 开源新模型、字节发布视频工具",
+    "date": "2026-06-17",
+    "created_at": "2026-06-17T08:30:00+08:00",
+    "content_type": "daily-news",
+    "keywords": ["AI", "API定价", "开源", "视觉模型", "AI视频", "日报"],
+    "language": "zh-CN",
+    "time_sensitivity": "daily",
+    "data_sources_used": ["web_search", "browser"],
+    "data_limitations": "本示例使用虚构数据。实际生产时需从真实来源填充，并确保所有 published_at 在 24h 内。"
+  },
+  "content_items": [
+    {
+      "id": "item-001",
+      "type": "product",
+      "title": "示例：OpenAI 调整 GPT-5o 系列 API 定价",
+      "summary": "示例数据 — 实际生产时从真实来源填充。OpenAI 宣布下调 mini 模型价格 40%，speech 系列改按字符计费。",
+      "url": "",
+      "source_platform": {
+        "name": "OpenAI Blog",
+        "category": "official",
+        "owner": "OpenAI",
+        "channel": "blog",
+        "display": "OpenAI 官方博客"
+      },
+      "published_at": "2026-06-17",
+      "status": "selected",
+      "source_verified": false,
+      "link_accessible": "no_link",
+      "source_tier": "official",
+      "editorial_note": "示例素材。实际生产时需验证来源链接和发布日期。日报入选理由：当日头部公司重大商业决策。",
+      "body_reference": "## 二、1. OpenAI 调整定价"
+    },
+    {
+      "id": "item-002",
+      "type": "product",
+      "title": "示例：Meta 开源 VLM-3.1 视觉模型更新",
+      "summary": "示例数据 — Meta 发布 VLM-3.1 系列更新，文档理解基准提升 15%，Apache 2.0 许可证。",
+      "url": "",
+      "source_platform": {
+        "name": "Meta AI Blog",
+        "category": "official",
+        "owner": "Meta",
+        "channel": "blog",
+        "display": "Meta AI 官方博客"
+      },
+      "published_at": "2026-06-17",
+      "status": "selected",
+      "source_verified": false,
+      "link_accessible": "no_link",
+      "source_tier": "official",
+      "editorial_note": "示例素材。入选理由：开源生态重要更新，当天发布。",
+      "body_reference": "## 二、2. Meta 开源 VLM-3.1"
+    },
+    {
+      "id": "item-003",
+      "type": "product",
+      "title": "示例：字节跳动发布'即梦 AI'视频编辑工具",
+      "summary": "示例数据 — 字节跳动正式发布 AI 视频编辑工具，支持文本生成视频和智能剪辑。",
+      "url": "",
+      "source_platform": {
+        "name": "字节跳动",
+        "category": "official",
+        "owner": "字节跳动",
+        "channel": "press_release",
+        "display": "字节跳动官方公告"
+      },
+      "published_at": "2026-06-17",
+      "status": "selected",
+      "source_verified": false,
+      "link_accessible": "no_link",
+      "source_tier": "official",
+      "editorial_note": "示例素材。入选理由：国内大厂入局 AI 视频赛道，当天发布。",
+      "body_reference": "## 二、3. 字节'即梦 AI'"
+    },
+    {
+      "id": "item-004",
+      "type": "news",
+      "title": "示例：HuggingFace 日活模型下载量破 10 亿",
+      "summary": "示例数据 — HuggingFace 平台模型日下载量首次突破 10 亿次。",
+      "url": "",
+      "source_platform": {
+        "name": "HuggingFace Blog",
+        "category": "official",
+        "owner": "HuggingFace",
+        "channel": "blog",
+        "display": "HuggingFace 官方博客"
+      },
+      "published_at": "2026-06-17",
+      "status": "selected",
+      "source_verified": false,
+      "link_accessible": "no_link",
+      "source_tier": "official",
+      "editorial_note": "示例素材。入选理由：行业发展里程碑数据。",
+      "body_reference": "## 二、4. HuggingFace 里程碑"
+    },
+    {
+      "id": "item-005",
+      "type": "news",
+      "title": "示例：Anthropic 发布 Claude 4 安全评测报告",
+      "summary": "示例数据 — Anthropic 发布 Claude 4 系列独立安全评测报告，涵盖越狱、偏见、误用等维度。",
+      "url": "",
+      "source_platform": {
+        "name": "Anthropic Blog",
+        "category": "official",
+        "owner": "Anthropic",
+        "channel": "blog",
+        "display": "Anthropic 官方博客"
+      },
+      "published_at": "2026-06-17",
+      "status": "selected",
+      "source_verified": false,
+      "link_accessible": "no_link",
+      "source_tier": "official",
+      "editorial_note": "示例素材。入选理由：AI 安全领域重要进展。",
+      "body_reference": "## 二、5. Anthropic 安全报告"
+    },
+    {
+      "id": "item-006",
+      "type": "news",
+      "title": "示例：国内多家厂商跟进 API 降价",
+      "summary": "示例数据 — 受 OpenAI 降价影响，国内多家大模型厂商宣布 API 价格调整。",
+      "url": "",
+      "source_platform": {
+        "name": "综合来源",
+        "category": "tech_media",
+        "owner": "",
+        "channel": "",
+        "display": "多家科技媒体综合"
+      },
+      "published_at": "2026-06-17",
+      "status": "selected",
+      "source_verified": false,
+      "link_accessible": "no_link",
+      "source_tier": "media",
+      "editorial_note": "示例素材。入选理由：与头条 OpenAI 降价形成联动叙事。",
+      "body_reference": "## 二、6. 国内厂商跟进降价"
+    },
+    {
+      "id": "item-007",
+      "type": "news",
+      "title": "示例：GitHub Copilot 新增多模型支持",
+      "summary": "示例数据 — GitHub Copilot 宣布支持切换底层模型，包括 Claude 和 Gemini。",
+      "url": "",
+      "source_platform": {
+        "name": "GitHub Blog",
+        "category": "official",
+        "owner": "GitHub",
+        "channel": "blog",
+        "display": "GitHub 官方博客"
+      },
+      "published_at": "2026-06-16",
+      "status": "selected",
+      "source_verified": false,
+      "link_accessible": "no_link",
+      "source_tier": "official",
+      "editorial_note": "示例素材。published_at 为昨日（6/16），仍在 24h 窗口内（昨夜发布）。入选理由：开发者工具重要更新。",
+      "body_reference": "## 二、7. Copilot 多模型支持"
+    },
+    {
+      "id": "item-008",
+      "type": "news",
+      "title": "示例：某 AI 芯片公司完成 C 轮融资",
+      "summary": "示例数据 — 剔除示例。纯融资消息无技术创新点，不适合日报定位。",
+      "url": "",
+      "source_platform": {
+        "name": "36Kr",
+        "category": "tech_media",
+        "owner": "",
+        "channel": "article",
+        "display": "36Kr"
+      },
+      "published_at": "2026-06-17",
+      "status": "rejected",
+      "source_verified": false,
+      "link_accessible": "no_link",
+      "source_tier": "media",
+      "editorial_note": "剔除原因：纯商业融资信息，无技术创新点，与 AI/科技从业者日常相关性低。"
+    }
+  ],
+  "body_markdown": "# AI 科技日报 | 2026年6月17日\n\n> ⚠️ 本文件为示例（example），所有数据和事件为虚构。\n> 实际生产时由 Agent 从真实来源填充，遵循 workflows/daily-news.md 工作流。\n\n## 一、今日速览\n\n2026年6月17日，星期三。OpenAI 调整 API 定价策略、Meta 开源新视觉模型、字节跳动发布 AI 视频工具。今日共监测 28 条 AI/科技要闻，精选 7 条。\n\n🏷️ 今日关键词：API定价 · 视觉模型 · AI视频 · 开源 · 安全评测\n\n## 二、要闻列表\n\n### 1. OpenAI 调整 GPT-5o 系列 API 定价\n\nOpenAI 宣布即日起调整 GPT-5o 系列 API 定价。GPT-5o-mini 价格下调 40%，GPT-5o-speech 新增按字符计费模式。这一调整被普遍认为是对近期开源模型竞争加剧的回应。\n\n> 📎 来源：[^ref-001] OpenAI 官方博客（6月17日）\n\n### 2. Meta 开源 VLM-3.1 视觉模型更新\n\nMeta 发布 VLM-3.1 系列更新，在文档理解基准上比前代提升 15%。采用 Apache 2.0 许可证，已在 Hugging Face 上架。7B、13B、34B 三个规模同步发布。\n\n> 📎 来源：[^ref-002] Meta AI Blog（6月17日）\n\n### 3. 字节跳动发布'即梦 AI'视频编辑工具\n\n字节跳动正式对外发布 AI 视频编辑工具，支持文本生成视频片段、智能剪辑和风格迁移。目前面向创作者开放公测，暂未公布正式定价。\n\n> 📎 来源：[^ref-003] 字节跳动官方公告（6月17日）\n\n### 4. HuggingFace 平台日活模型下载量破 10 亿\n\nHuggingFace 宣布平台日活模型下载量首次突破 10 亿次，相比半年前增长 3 倍。开源模型的采用速度正在加速。\n\n> 📎 来源：[^ref-004] HuggingFace Blog（6月17日）\n\n### 5. Anthropic 发布 Claude 4 安全评测报告\n\nAnthropic 发布 Claude 4 系列独立安全评测报告，涵盖越狱抵抗、偏见检测、误用风险评估等维度。报告显示在多项安全基准上相比前代有显著提升。\n\n> 📎 来源：[^ref-005] Anthropic Blog（6月17日）\n\n### 6. 国内多家厂商跟进 API 降价\n\n受 OpenAI 降价影响，国内多家大模型厂商宣布 API 价格调整。部分厂商降幅达 30%-50%，API 价格战持续升温。\n\n> 📎 来源：[^ref-006] 综合多家科技媒体报道（6月17日）\n\n### 7. GitHub Copilot 新增多模型支持\n\nGitHub Copilot 宣布支持切换底层模型。开发者可在 Claude 3.5 Sonnet、Gemini 2.0 和 GPT-5o 之间自由选择。该功能即日起逐步推送。\n\n> 📎 来源：[^ref-007] GitHub Blog（6月16日，昨夜发布）\n\n## 三、明日关注\n\n- **Google I/O 预热活动**（6月18日）：预计有 Gemini 新版本和 AI 开发工具更新。\n- **API 降价连锁反应**：关注更多厂商的定价调整和开发者社区反馈。\n- **字节'即梦 AI'公测数据**：明日可能公布首日用户数据。\n\n## 参考来源\n\n[^ref-001]: OpenAI Blog — \"GPT-5o API Pricing Update\"（2026-06-17）\n[^ref-002]: Meta AI Blog — \"VLM-3.1 Release Notes\"（2026-06-17）\n[^ref-003]: 字节跳动 — \"即梦 AI 正式开放公测\"（2026-06-17）\n[^ref-004]: HuggingFace Blog — \"1 Billion Daily Model Downloads\"（2026-06-17）\n[^ref-005]: Anthropic Blog — \"Claude 4 Safety Evaluation Report\"（2026-06-17）\n[^ref-006]: 综合多家科技媒体 — \"国内大模型 API 价格调整汇总\"（2026-06-17）\n[^ref-007]: GitHub Blog — \"Copilot Multi-Model Support\"（2026-06-16）\n",
+  "references": [
+    {
+      "id": "ref-001",
+      "title": "GPT-5o API Pricing Update",
+      "url": "",
+      "source_type": "official_blog",
+      "source_platform": {
+        "name": "OpenAI Blog",
+        "category": "official",
+        "owner": "OpenAI",
+        "channel": "blog",
+        "display": "OpenAI 官方博客"
+      },
+      "reliability": "high",
+      "access_status": "not_checked",
+      "note": "示例数据。实际生产时填充真实 URL 并验证可访问。"
+    },
+    {
+      "id": "ref-002",
+      "title": "VLM-3.1 Release Notes",
+      "url": "",
+      "source_type": "official_blog",
+      "source_platform": {
+        "name": "Meta AI Blog",
+        "category": "official",
+        "owner": "Meta",
+        "channel": "blog",
+        "display": "Meta AI 官方博客"
+      },
+      "reliability": "high",
+      "access_status": "not_checked",
+      "note": "示例数据。"
+    },
+    {
+      "id": "ref-003",
+      "title": "即梦 AI 正式开放公测",
+      "url": "",
+      "source_type": "official_blog",
+      "source_platform": {
+        "name": "字节跳动",
+        "category": "official",
+        "owner": "字节跳动",
+        "channel": "press_release",
+        "display": "字节跳动官方公告"
+      },
+      "reliability": "high",
+      "access_status": "not_checked",
+      "note": "示例数据。"
+    },
+    {
+      "id": "ref-004",
+      "title": "1 Billion Daily Model Downloads",
+      "url": "",
+      "source_type": "official_blog",
+      "source_platform": {
+        "name": "HuggingFace Blog",
+        "category": "official",
+        "owner": "HuggingFace",
+        "channel": "blog",
+        "display": "HuggingFace 官方博客"
+      },
+      "reliability": "high",
+      "access_status": "not_checked",
+      "note": "示例数据。"
+    },
+    {
+      "id": "ref-005",
+      "title": "Claude 4 Safety Evaluation Report",
+      "url": "",
+      "source_type": "official_blog",
+      "source_platform": {
+        "name": "Anthropic Blog",
+        "category": "official",
+        "owner": "Anthropic",
+        "channel": "blog",
+        "display": "Anthropic 官方博客"
+      },
+      "reliability": "high",
+      "access_status": "not_checked",
+      "note": "示例数据。"
+    },
+    {
+      "id": "ref-006",
+      "title": "国内大模型 API 价格调整汇总",
+      "url": "",
+      "source_type": "article",
+      "source_platform": {
+        "name": "综合来源",
+        "category": "tech_media",
+        "owner": "",
+        "channel": "",
+        "display": "多家科技媒体综合"
+      },
+      "reliability": "medium",
+      "access_status": "not_checked",
+      "note": "示例数据。实际生产时拆分为多个独立来源。"
+    },
+    {
+      "id": "ref-007",
+      "title": "Copilot Multi-Model Support",
+      "url": "",
+      "source_type": "official_blog",
+      "source_platform": {
+        "name": "GitHub Blog",
+        "category": "official",
+        "owner": "GitHub",
+        "channel": "blog",
+        "display": "GitHub 官方博客"
+      },
+      "reliability": "high",
+      "access_status": "not_checked",
+      "note": "示例数据。"
+    }
+  ],
+  "editorial_notes": {
+    "selection_rationale": "本示例展示日报的典型结构：7 条要闻覆盖模型发布、定价策略、产品发布、平台里程碑、安全评测、行业动态和开发者工具。时间窗口覆盖 6/16 深夜至 6/17 白天。",
+    "rejection_summary": "剔除 1 条纯融资新闻（无技术创新点，与 AI/科技从业者日常相关性低）。",
+    "fact_check_notes": "本文件为示例，所有数据为虚构。实际生产时需通过三项硬检查（来源真实、链接可访问、权威优先），并确认所有 published_at 在 24h 内。",
+    "data_limitations": "示例文件。实际生产时记录数据覆盖局限（如仅覆盖中文源、某工具不可用时的降级）。",
+    "risk_notes": "示例文件。实际生产时标注可能引起争议的内容。",
+    "editorial_decisions": "① 将 OpenAI 降价放在首位（当日最重要事件），国内厂商跟进放在第 6 位形成联动。② GitHub Copilot 昨夜发布（6/16深夜），仍在 24h 窗口内，纳入今日日报并标注'昨夜发布'。③ 字节'即梦 AI'虽然是产品发布，但涉及 AI 视频赛道趋势，值得关注。"
+  }
+}

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>编辑审阅面板 — Editing Skill</title>
+<style>
+/* ===== 变量体系（与 tech-magazine 同源） ===== */
+:root {
+  --text-primary: #1a1a1a;
+  --text-secondary: #666666;
+  --text-muted: #999999;
+  --link: #0066cc;
+  --accent: #1a56db;
+  --accent-green: #047857;
+  --accent-red: #dc2626;
+  --accent-yellow: #d97706;
+  --bg-page: #ffffff;
+  --bg-card: #f8f9fa;
+  --bg-hover: #f0f4ff;
+  --border: #e5e7eb;
+  --border-light: #f3f4f6;
+  --shadow: 0 1px 3px rgba(0,0,0,0.08);
+  --radius: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-primary: #e5e7eb;
+    --text-secondary: #9ca3af;
+    --text-muted: #6b7280;
+    --link: #60a5fa;
+    --accent: #3b82f6;
+    --accent-green: #34d399;
+    --accent-red: #f87171;
+    --accent-yellow: #fbbf24;
+    --bg-page: #111827;
+    --bg-card: #1f2937;
+    --bg-hover: #1e3a5f;
+    --border: #374151;
+    --border-light: #1f2937;
+    --shadow: 0 1px 3px rgba(0,0,0,0.3);
+  }
+}
+
+/* ===== 基础 ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+               "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue",
+               Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-primary);
+  background: var(--bg-page);
+  padding: 16px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* ===== 顶部品牌栏 ===== */
+.brand-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.brand-bar .brand {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.brand-bar .badge {
+  font-size: 11px;
+  padding: 2px 10px;
+  border-radius: 10px;
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+}
+
+/* ===== 标题区 ===== */
+.panel-header {
+  margin-bottom: 20px;
+}
+
+.panel-header h1 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.panel-header .meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.meta-row .meta-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.meta-row .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-green { background: var(--accent-green); }
+.dot-yellow { background: var(--accent-yellow); }
+.dot-red { background: var(--accent-red); }
+.dot-blue { background: var(--accent); }
+
+/* ===== 分区卡片 ===== */
+.section {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin-bottom: 12px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.section-header h2 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-header .count {
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 400;
+  background: var(--bg-page);
+  padding: 1px 8px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+/* ===== 内容预览区 ===== */
+.preview-body {
+  max-height: 400px;
+  overflow-y: auto;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--text-primary);
+  padding-right: 4px;
+}
+
+.preview-body h1 { font-size: 18px; margin: 0.8em 0 0.4em; }
+.preview-body h2 { font-size: 16px; margin: 1em 0 0.5em; padding-bottom: 0.3em; border-bottom: 1px solid var(--border-light); }
+.preview-body h3 { font-size: 15px; margin: 0.8em 0 0.3em; }
+.preview-body p { margin-bottom: 0.6em; }
+.preview-body ul, .preview-body ol { padding-left: 1.5em; margin-bottom: 0.6em; }
+.preview-body li { margin-bottom: 0.3em; }
+
+/* 预览区滚动条 */
+.preview-body::-webkit-scrollbar { width: 4px; }
+.preview-body::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+/* ===== 来源清单 ===== */
+.source-list {
+  list-style: none;
+  padding: 0;
+}
+
+.source-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.source-item:last-child { border-bottom: none; }
+
+.source-item .tier-badge {
+  flex-shrink: 0;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 1px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tier-official { background: #dcfce7; color: #166534; }
+.tier-media { background: #dbeafe; color: #1e40af; }
+.tier-community { background: #fef3c7; color: #92400e; }
+.tier-unknown { background: #f3f4f6; color: #6b7280; }
+
+@media (prefers-color-scheme: dark) {
+  .tier-official { background: #064e3b; color: #6ee7b7; }
+  .tier-media { background: #1e3a5f; color: #93c5fd; }
+  .tier-community { background: #78350f; color: #fcd34d; }
+  .tier-unknown { background: #374151; color: #9ca3af; }
+}
+
+.source-item .source-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.source-item .source-name {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.source-item .source-url {
+  color: var(--text-muted);
+  font-size: 12px;
+  word-break: break-all;
+}
+
+.source-item .source-status {
+  flex-shrink: 0;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* ===== 编辑手记 ===== */
+.editorial-notes {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.editorial-notes .note-block {
+  margin-bottom: 10px;
+  padding-left: 12px;
+  border-left: 3px solid var(--border);
+}
+
+.editorial-notes .note-block:last-child { margin-bottom: 0; }
+
+.editorial-notes .note-label {
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+.editorial-notes .note-content {
+  color: var(--text-primary);
+}
+
+/* ===== 统计条 ===== */
+.stats-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.stat-chip {
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 12px;
+  background: var(--bg-page);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.stat-chip .stat-value {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* ===== 操作按钮区 ===== */
+.action-bar {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background: var(--bg-page);
+  color: var(--text-primary);
+  transition: background 0.15s, border-color 0.15s;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: var(--bg-hover);
+  border-color: var(--accent);
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #ffffff;
+  border-color: var(--accent);
+}
+
+.btn-primary:hover {
+  background: #1e40af;
+  border-color: #1e40af;
+}
+
+.btn-success {
+  background: var(--accent-green);
+  color: #ffffff;
+  border-color: var(--accent-green);
+}
+
+.btn-success:hover {
+  background: #065f46;
+  border-color: #065f46;
+}
+
+.btn-warning {
+  color: var(--accent-yellow);
+  border-color: var(--accent-yellow);
+}
+
+.btn-warning:hover {
+  background: #fef3c7;
+}
+
+.btn-danger {
+  color: var(--accent-red);
+  border-color: var(--accent-red);
+}
+
+.btn-danger:hover {
+  background: #fef2f2;
+}
+
+/* SVG 图标内联 */
+.btn svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+/* ===== 响应式 ===== */
+@media (max-width: 480px) {
+  body { padding: 12px; }
+  .section { padding: 12px 14px; }
+  .action-bar { flex-direction: column; }
+  .btn { justify-content: center; width: 100%; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════ 品牌栏 ═══════════ -->
+<div class="brand-bar">
+  <span class="brand">📋 Editing Skill · 编辑审阅面板</span>
+  <span class="badge">REVIEW</span>
+</div>
+
+<!-- ═══════════ 标题区 ═══════════ -->
+<div class="panel-header">
+  <h1><!-- TITLE_PLACEHOLDER --></h1>
+  <div class="meta-row">
+    <span class="meta-item"><span class="dot dot-blue"></span> <!-- CONTENT_TYPE_PLACEHOLDER --></span>
+    <span class="meta-item">📅 <!-- DATE_PLACEHOLDER --></span>
+    <span class="meta-item">📝 <!-- WORD_COUNT_PLACEHOLDER --> 字</span>
+    <span class="meta-item"><span class="dot dot-green"></span> <!-- TIME_SENSITIVITY_PLACEHOLDER --></span>
+  </div>
+</div>
+
+<!-- ═══════════ 统计条 ═══════════ -->
+<div class="stats-row">
+  <span class="stat-chip">素材 <span class="stat-value"><!-- TOTAL_ITEMS_PLACEHOLDER --></span></span>
+  <span class="stat-chip">入选 <span class="stat-value"><!-- SELECTED_COUNT_PLACEHOLDER --></span></span>
+  <span class="stat-chip">来源 <span class="stat-value"><!-- REF_COUNT_PLACEHOLDER --></span></span>
+  <span class="stat-chip">已验证 <span class="stat-value"><!-- VERIFIED_COUNT_PLACEHOLDER --></span></span>
+  <span class="stat-chip">关键词 <span class="stat-value"><!-- KEYWORDS_PLACEHOLDER --></span></span>
+</div>
+
+<!-- ═══════════ 内容预览 ═══════════ -->
+<div class="section">
+  <div class="section-header">
+    <h2>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      内容预览
+    </h2>
+    <span class="count"><!-- WORD_COUNT_PLACEHOLDER --> 字</span>
+  </div>
+  <div class="preview-body">
+    <!-- BODY_HTML_PLACEHOLDER -->
+  </div>
+</div>
+
+<!-- ═══════════ 来源清单 ═══════════ -->
+<div class="section">
+  <div class="section-header">
+    <h2>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+      来源清单
+    </h2>
+    <span class="count"><!-- REF_COUNT_PLACEHOLDER --> 条</span>
+  </div>
+  <ul class="source-list">
+    <!-- SOURCE_ITEMS_PLACEHOLDER -->
+  </ul>
+</div>
+
+<!-- ═══════════ 编辑手记 ═══════════ -->
+<div class="section">
+  <div class="section-header">
+    <h2>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+      编辑手记
+    </h2>
+  </div>
+  <div class="editorial-notes">
+    <!-- EDITORIAL_NOTES_PLACEHOLDER -->
+  </div>
+</div>
+
+<!-- ═══════════ 操作按钮 ═══════════ -->
+<div class="action-bar">
+  <button class="btn btn-success" onclick="alert('✅ 确认发布')">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+    确认，进入格式消费
+  </button>
+  <button class="btn btn-warning" onclick="alert('🔧 返回修改')">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+    返回修改
+  </button>
+  <button class="btn btn-danger" onclick="alert('⏭️ 跳过')">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="13 17 18 12 13 7"/><polyline points="6 17 11 12 6 7"/></svg>
+    跳过，稍后处理
+  </button>
+  <button class="btn" onclick="alert('📋 已复制')">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+    复制正文
+  </button>
+</div>
+
+<!--
+╔══════════════════════════════════════════════════════════╗
+║  使用说明                                                 ║
+║                                                          ║
+║  本面板是一个 HTML 模板。Agent 在生产 content-package     ║
+║  之后（L2 完成后），将 manifest.json 和 body.md 的数据     ║
+║  填入占位符，生成 output-review.html 供用户审阅。          ║
+║                                                          ║
+║  占位符列表（按出现顺序）：                                ║
+║  • TITLE_PLACEHOLDER — metadata.title                    ║
+║  • CONTENT_TYPE_PLACEHOLDER — metadata.content_type 中文名 ║
+║  • DATE_PLACEHOLDER — metadata.date                       ║
+║  • WORD_COUNT_PLACEHOLDER — body.md 字数统计              ║
+║  • TIME_SENSITIVITY_PLACEHOLDER — time_sensitivity 中文    ║
+║  • TOTAL_ITEMS_PLACEHOLDER — content_items 总数           ║
+║  • SELECTED_COUNT_PLACEHOLDER — status=selected 的条数    ║
+║  • REF_COUNT_PLACEHOLDER — references[] 条数              ║
+║  • VERIFIED_COUNT_PLACEHOLDER — source_verified=true 条数 ║
+║  • KEYWORDS_PLACEHOLDER — metadata.keywords 逗号分隔      ║
+║  • BODY_HTML_PLACEHOLDER — body.md 渲染后的 HTML          ║
+║  • SOURCE_ITEMS_PLACEHOLDER — references[] 渲染为 <li>    ║
+║  • EDITORIAL_NOTES_PLACEHOLDER — editorial_notes 渲染     ║
+║                                                          ║
+║  操作按钮：                                                ║
+║  • 确认 → 进入 L3 格式消费（format-consume.md）           ║
+║  • 返回修改 → 回到 L2 步骤 6/7/8 编辑后重新生成           ║
+║  • 跳过 → 标记为"待处理"，不进入后续流程                   ║
+║  • 复制正文 → 复制 body.md 纯文本到剪贴板                 ║
+║                                                          ║
+║  设计约束：                                                ║
+║  • 无 JavaScript 依赖（onclick 仅作示意，微信环境可安全   ║
+║    移除，由 Agent 通过确认关卡处理按钮逻辑）              ║
+║  • 纯 CSS + 内联 SVG 图标                                ║
+║  • CSS 变量体系与 tech-magazine 同源                     ║
+║  • 支持暗色模式（prefers-color-scheme: dark）            ║
+╚══════════════════════════════════════════════════════════╝
+-->
+
+</body>
+</html>

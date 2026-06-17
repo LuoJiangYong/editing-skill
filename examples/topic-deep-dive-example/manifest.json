@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0.0",
+  "content_package_id": "topic-deep-dive-2026-06-17-a1b2c3",
+  "metadata": {
+    "title": "API 价格战：开源模型的「鲶鱼效应」如何重塑 AI 商业格局",
+    "subtitle": "从 OpenAI 降价看 API 经济的结构性变化",
+    "date": "2026-06-17",
+    "created_at": "2026-06-17T16:00:00+08:00",
+    "content_type": "topic-deep-dive",
+    "keywords": ["API定价", "价格战", "开源模型", "OpenAI", "商业分析", "AI经济"],
+    "language": "zh-CN",
+    "time_sensitivity": "evergreen",
+    "data_sources_used": ["web_search", "browser"],
+    "data_limitations": "本示例使用虚构数据。实际生产时需多源深度检索并交叉验证核心事实。"
+  },
+  "content_items": [
+    {
+      "id": "item-001",
+      "type": "event",
+      "title": "示例：OpenAI API 降价 40%",
+      "summary": "示例数据 — OpenAI 6月17日宣布 GPT-5o-mini 降价 40%，speech 系列改按字符计费。",
+      "url": "",
+      "source_platform": {
+        "name": "OpenAI Blog",
+        "category": "official",
+        "owner": "OpenAI",
+        "channel": "blog",
+        "display": "OpenAI 官方博客"
+      },
+      "published_at": "2026-06-17",
+      "status": "selected",
+      "source_verified": false,
+      "link_accessible": "no_link",
+      "source_tier": "official",
+      "editorial_note": "示例素材。核心事件触发点。",
+      "body_reference": "## 一、事件触发"
+    },
+    {
+      "id": "item-002",
+      "type": "background",
+      "title": "示例：近两年 API 价格走势数据",
+      "summary": "示例数据 — 汇总 2024-2026 年主流模型 API 价格变化。GPT-4 级别模型从 $60/M tokens 降至 $8/M tokens，降幅 87%。",
+      "url": "",
+      "source_platform": {
+        "name": "综合来源",
+        "category": "tech_media",
+        "owner": "",
+        "channel": "",
+        "display": "多家科技媒体 + 官方定价页"
+      },
+      "published_at": "",
+      "status": "background",
+      "source_verified": false,
+      "link_accessible": "no_link",
+      "source_tier": "media",
+      "editorial_note": "示例素材。背景数据，用于支撑'价格持续下降'的判断。实际生产时需从各厂商定价页获取真实数据。",
+      "body_reference": "## 二、价格走势回顾"
+    },
+    {
+      "id": "item-003",
+      "type": "comparison",
+      "title": "示例：开源 vs 闭源模型 API 定价对比",
+      "summary": "示例数据 — Llama 4 系列开源后，基于它的推理服务价格仅为 GPT-5o 的 1/5。开源生态对闭源定价形成压力。",
+      "url": "",
+      "source_platform": {
+        "name": "综合来源",
+        "category": "tech_media",
+        "owner": "",
+        "channel": "",
+        "display": "各平台定价页 + 社区对比分析"
+      },
+      "published_at": "",
+      "status": "selected",
+      "source_verified": false,
+      "link_accessible": "no_link",
+      "source_tier": "media",
+      "editorial_note": "示例素材。竞争分析核心数据。",
+      "body_reference": "## 三、竞争格局"
+    }
+  ],
+  "body_markdown": "# API 价格战：开源模型的\"鲶鱼效应\"如何重塑 AI 商业格局\n\n> ⚠️ 本文件为示例（example），所有数据和事件为虚构。\n> 实际生产时由 Agent 从真实来源填充，遵循 workflows/topic-deep-dive.md 工作流。\n\n## 一、事件触发：OpenAI 再度大幅降价\n\n2026年6月17日，OpenAI 宣布 GPT-5o-mini 价格下调 40%，speech 系列改按字符计费。这是 OpenAI 在 2026 年的第三次降价。同日，国内多家厂商跟进降价，部分降幅达 30%-50%。\n\n> 📎 来源：[^ref-001]\n\n这不是孤立事件。如果把时间轴拉长，自 2024 年以来，AI API 价格呈现持续、加速的下降趋势。\n\n## 二、价格走势：两年降 87% 的速度\n\n### 2.1 数据回顾\n\n从 GPT-4 到 GPT-5o-mini，同等能力级别的 API 价格从 $60/M tokens 降至 $8/M tokens，降幅 87%。这个速度甚至超过了摩尔定律（18 个月性能翻倍）。\n\n推动因素：\n- 模型架构优化（MoE、量化、蒸馏）\n- 推理硬件进步（专用芯片、更大规模集群）\n- 竞争压力（开源模型、新进入者）\n\n### 2.2 降价的三波浪潮\n\n| 阶段 | 时间 | 驱动力 | 降价幅度 |\n|------|------|-------|---------|\n| 第一波 | 2024 | 规模效应 + 架构优化 | 30-50% |\n| 第二波 | 2025 | 开源模型竞争 | 50-70% |\n| 第三波 | 2026 | 多厂商价格战 | 30-40% 加速中 |\n\n> ⚠️ 以上数据为示例虚构。实际生产时需从各厂商公开定价页获取真实数据。\n\n## 三、竞争格局：开源模型的\"鲶鱼效应\"\n\n### 3.1 定价对比\n\n| 模型类型 | 代表 | 价格（$/M tokens） | 相对 GPT-5o |\n|---------|------|-------------------|------------|\n| 闭源旗舰 | GPT-5o | $15 | 基准 |\n| 闭源轻量 | GPT-5o-mini | $8（降价后） | 53% |\n| 开源部署 | Llama 4 系列 | $3（推理成本） | 20% |\n| 开源免费 | 本地运行 | $0（仅算力） | 0% |\n\n> ⚠️ 以上价格为示例虚构。\n\n### 3.2 开源模型的压力传导机制\n\n开源模型通过三条路径影响闭源定价：\n\n1. **直接替代**：开发者将推理负载从闭源 API 迁移到开源自部署方案\n2. **议价锚点**：开源方案的成本成为企业谈判的参考锚点\n3. **能力追赶**：开源模型质量逐步逼近闭源，削弱闭源的差异化优势\n\n## 四、影响分析\n\n### 4.1 对开发者的影响\n\nAI 应用开发成本持续下降。一个典型的 AI-native 产品在 2024 年的 API 成本可能占总运营成本的 40%，到 2026 年可能降至 10% 以下。这释放了预算用于产品创新而非基础设施。\n\n### 4.2 对创业公司的影响\n\n价格战是双刃剑：低成本降低了创业门槛，但也意味着\"API 套壳\"类产品的竞争壁垒进一步降低。\n\n### 4.3 对 AI 厂商的影响\n\n降价→用户增长→更多数据→模型改进→成本再降→再降价。这个飞轮一旦转起来，规模不足的厂商将被挤出。\n\n## 五、前景判断\n\n基于当前趋势的编辑判断（非预测）：\n\n1. **降价不可逆**：开源模型的持续进步意味着闭源模型的定价权将持续被侵蚀。\n2. **差异化转向**：单纯卖 API token 的商业模式不可持续。厂商将向更高层（应用、平台、生态）迁移。\n3. **关注变量**：如果出现突破性技术（如全新架构），可能暂时打破降价趋势——但长期看开源仍会追上来。\n\n---\n\n*本分析基于截至 2026年6月17日 的公开信息。所有价格数据为示例虚构。*\n\n## 参考来源\n\n[^ref-001]: OpenAI Blog — \"GPT-5o API Pricing Update\"（2026-06-17）\n[^ref-002]: 示例来源 — 各厂商公开定价页面\n",
+  "references": [
+    {
+      "id": "ref-001",
+      "title": "GPT-5o API Pricing Update",
+      "url": "",
+      "source_type": "official_blog",
+      "source_platform": {
+        "name": "OpenAI Blog",
+        "category": "official",
+        "owner": "OpenAI",
+        "channel": "blog",
+        "display": "OpenAI 官方博客"
+      },
+      "reliability": "high",
+      "access_status": "not_checked",
+      "note": "示例数据。"
+    },
+    {
+      "id": "ref-002",
+      "title": "各厂商公开定价页面",
+      "url": "",
+      "source_type": "other",
+      "source_platform": {
+        "name": "综合来源",
+        "category": "tech_media",
+        "owner": "",
+        "channel": "",
+        "display": "各厂商定价页"
+      },
+      "reliability": "medium",
+      "access_status": "not_checked",
+      "note": "示例数据。实际生产时拆分为各厂商独立来源。"
+    }
+  ],
+  "editorial_notes": {
+    "selection_rationale": "本示例展示通用专题的产业分析结构变体。选题由 OpenAI 降价事件触发，通过回溯 2 年价格走势和竞争格局变化，提炼'开源模型鲶鱼效应'的叙事线。",
+    "fact_check_notes": "本文件为示例，所有价格数据为虚构。实际生产时需从各厂商定价页获取真实数据并交叉验证。",
+    "data_limitations": "示例文件。实际生产时记录检索覆盖局限（如仅覆盖中英文源、缺少学术研究视角）。",
+    "editorial_decisions": "① 选择产业分析结构（非公司分析），因为主题是'API经济'而非单一公司。② 加入'价格走势回顾'章节以提供历史视角，不局限于当天新闻。③ 前景判断明确标注为'编辑判断（非预测）'以区分事实和观点。"
+  }
+}
