@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 科技杂志 — 样例</title>
+<style>
+/* ===== 变量 ===== */
+:root {
+  --text-primary: #1a1a1a;
+  --text-secondary: #666666;
+  --link: #0066cc;
+  --accent: #1a56db;
+  --accent-green: #047857;
+  --bg-page: #ffffff;
+  --bg-card: #f8f9fa;
+  --border: #e5e7eb;
+  --quote-bg: #f0f4ff;
+  --quote-border: #1a56db;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-primary: #e5e7eb;
+    --text-secondary: #9ca3af;
+    --link: #60a5fa;
+    --accent: #3b82f6;
+    --accent-green: #34d399;
+    --bg-page: #111827;
+    --bg-card: #1f2937;
+    --border: #374151;
+    --quote-bg: #1e3a5f;
+    --quote-border: #3b82f6;
+  }
+}
+
+/* ===== 基础 ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+               "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue",
+               Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--text-primary);
+  background: var(--bg-page);
+  padding: 20px 16px 40px;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* ===== 标题 ===== */
+h1 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: 2em;
+  margin-bottom: 0.8em;
+  padding-bottom: 0.4em;
+  border-bottom: 2px solid var(--accent);
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--text-primary);
+  margin-top: 1.5em;
+  margin-bottom: 0.6em;
+}
+
+h4 {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--text-primary);
+  margin-top: 1.2em;
+  margin-bottom: 0.4em;
+}
+
+/* ===== 段落与文本 ===== */
+p {
+  margin-bottom: 0.8em;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+/* ===== 列表 ===== */
+ul, ol {
+  padding-left: 1.5em;
+  margin-bottom: 0.8em;
+}
+
+li {
+  margin-bottom: 0.4em;
+}
+
+/* ===== 引用块 ===== */
+blockquote {
+  background: var(--quote-bg);
+  border-left: 4px solid var(--quote-border);
+  padding: 12px 16px;
+  margin: 1em 0;
+  font-size: 14px;
+  color: var(--text-secondary);
+  border-radius: 0 4px 4px 0;
+}
+
+blockquote strong {
+  color: var(--text-primary);
+}
+
+/* ===== 分隔线 ===== */
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 1.5em 0;
+}
+
+/* ===== 标签 ===== */
+.tag {
+  display: inline-block;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: rgba(26, 86, 219, 0.1);
+  color: var(--accent);
+  margin-right: 6px;
+  margin-bottom: 4px;
+}
+
+/* ===== 项目卡片 ===== */
+.project-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 1.2em 0;
+}
+
+.project-card h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  color: var(--text-primary);
+}
+
+.project-card .meta {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+.project-card .meta span {
+  margin-right: 16px;
+}
+
+.project-card .features {
+  margin: 8px 0;
+  padding-left: 16px;
+}
+
+.project-card .features li {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+
+.project-card .comment {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+/* ===== 对比表格 ===== */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.2em 0;
+  font-size: 14px;
+  overflow-x: auto;
+  display: block;
+}
+
+.comparison-table th {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  font-weight: 600;
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 2px solid var(--border);
+  white-space: nowrap;
+}
+
+.comparison-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-primary);
+}
+
+/* ===== 图片 ===== */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 1.2em 0;
+  display: block;
+}
+
+.img-caption {
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: -0.8em;
+  margin-bottom: 1.2em;
+}
+
+/* ===== 脚注区 ===== */
+.footnotes {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid var(--border);
+}
+
+.footnotes p {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 0.3em;
+}
+
+/* ===== 概览卡片 ===== */
+.overview-card {
+  background: var(--bg-card);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 1em 0;
+}
+
+.overview-card .keywords {
+  margin-top: 8px;
+}
+
+/* ===== 编辑信号块 ===== */
+.signal-block {
+  background: var(--quote-bg);
+  border-left: 4px solid var(--quote-border);
+  padding: 10px 14px;
+  margin: 1em 0;
+  font-size: 14px;
+  color: var(--text-secondary);
+  border-radius: 0 4px 4px 0;
+}
+
+.signal-block strong {
+  color: var(--text-primary);
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════ 标题区 ═══════════════ -->
+<p class="text-secondary" style="text-align:center; margin-bottom:4px;">AI 科技理想图 · 简报POST</p>
+<h1>2026年6月第三周 AI 热点回顾</h1>
+<p class="text-secondary" style="text-align:center; margin-bottom:24px;">
+  覆盖 6月9日 — 6月15日 · 共监测 35 条新闻 · 精选 8 条
+</p>
+
+<hr>
+
+<!-- ═══════════════ 概览 ═══════════════ -->
+<h2>一、本期概览</h2>
+
+<p>本期覆盖 2026年6月9日至6月15日。本周 AI 领域延续多模态竞赛态势：OpenAI 发布三款实时音频模型，Meta 开源新一代视觉语言模型 VLM-3，国内多家厂商跟进多模态能力。开源生态持续繁荣，社区贡献活跃。</p>
+
+<div class="overview-card">
+  <strong>🏷️ 本期关键词</strong>
+  <div class="keywords">
+    <span class="tag">多模态</span>
+    <span class="tag">开源</span>
+    <span class="tag">实时音频</span>
+    <span class="tag">视觉语言</span>
+    <span class="tag">模型竞赛</span>
+  </div>
+</div>
+
+<!-- ═══════════════ 热点排行 ═══════════════ -->
+<h2>二、热点排行</h2>
+
+<!-- 热点 1 -->
+<h3>1. OpenAI 发布 GPT-5o 实时音频系列</h3>
+
+<p>OpenAI 于 6 月 15 日发布三款音频模型：GPT-5o-mini-speech、GPT-5o-speech 和 GPT-5o-speech-pro，覆盖轻量到专业级，低延迟实时语音交互。三款模型均支持多语种和情感表达。<a href="#ref-001">[^ref-001]</a></p>
+
+<p>技术要点：最小的 mini-speech 模型延迟低于 200ms，speech-pro 支持专业级语音合成和实时翻译。API 定价为 mini 免费、标准版 $0.015/分钟、专业版 $0.06/分钟。</p>
+
+<div class="signal-block">
+  💡 <strong>编辑视角：</strong>OpenAI 此次三连发不是简单的产品迭代，而是从"文本模型"到"全模态平台"的战略转型信号。结合上周的开发者大会公告，可以预见音频交互将成为下一个 AI 应用爆发点。
+</div>
+
+<!-- 热点 2 -->
+<h3>2. Meta 开源 VLM-3 视觉语言模型</h3>
+
+<p>Meta 于 6 月 16 日开源 VLM-3 系列，涵盖 7B、13B、34B 三个规模，在多个视觉理解基准上达到或超越同规模闭源模型。<a href="#ref-002">[^ref-002]</a></p>
+
+<p>VLM-3 支持图像描述、视觉问答、文档理解、图表解读等任务，采用 Apache 2.0 许可证。社区反应热烈，发布 24 小时内 GitHub stars 突破 5,000。</p>
+
+<!-- 热点 3 — 示例使用对比表 -->
+<h3>3. 国内大模型厂商跟进多模态能力</h3>
+
+<p>本周国内多家厂商发布或更新多模态能力。以下为主要动态对比：</p>
+
+<table class="comparison-table">
+  <thead>
+    <tr>
+      <th>厂商</th>
+      <th>动态</th>
+      <th>核心能力</th>
+      <th>日期</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>阿里通义</td>
+      <td>千问-VL-Max 升级</td>
+      <td>视频理解、长文档解析</td>
+      <td>6月13日</td>
+    </tr>
+    <tr>
+      <td>百度文心</td>
+      <td>ERNIE-ViLG 3.0</td>
+      <td>文生图、图生视频</td>
+      <td>6月12日</td>
+    </tr>
+    <tr>
+      <td>字节豆包</td>
+      <td>视觉模型开放公测</td>
+      <td>图像识别、场景理解</td>
+      <td>6月14日</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ═══════════════ 趋势分析 ═══════════════ -->
+<h2>三、趋势分析</h2>
+
+<h3>🔥 多模态竞赛加速</h3>
+
+<p>本周最明显的趋势信号是多模态模型的密集发布。从 OpenAI 的音频模型到 Meta 的视觉模型，再到国内厂商的跟进，多模态能力正从"锦上添花"变成"标配能力"。</p>
+
+<div class="signal-block">
+  📈 <strong>趋势信号：</strong>连续 4 周多模态相关新闻数量递增（5→7→9→12 条）。预计下周将有更多厂商跟进，特别是语音交互方向。
+</div>
+
+<h3>🆕 实时语音 AI 成为新战场</h3>
+
+<p>OpenAI 的音频系列发布标志着实时语音交互从实验性功能走向产品化。字节、阿里此前也有相关布局。预计 2026 年下半年语音 AI 应用将迎来爆发。</p>
+
+<!-- ═══════════════ 展望 ═══════════════ -->
+<h2>四、下周展望</h2>
+
+<ul>
+  <li><strong>6月18日：</strong>Google I/O 预热活动，预计有 Gemini 更新。</li>
+  <li><strong>持续关注：</strong>Meta VLM-3 的社区微调版本和第三方评测。</li>
+  <li><strong>值得关注：</strong>国内语音 AI 赛道的创业公司动态，可能受 OpenAI 音频模型发布刺激。</li>
+</ul>
+
+<hr>
+
+<!-- ═══════════════ GitHub 项目推荐章节（示例） ═══════════════ -->
+<h2>附：本周值得关注的开源项目</h2>
+
+<div class="project-card">
+  <h4>llama.cpp</h4>
+  <div class="meta">
+    <span>⭐ 78.2k</span>
+    <span>📝 C/C++</span>
+    <span>📄 MIT</span>
+  </div>
+  <p style="margin-bottom:8px;">通用本地大模型推理框架，支持 GGUF 格式，在消费级硬件上高效运行。最新版本支持了 VLM-3 的视觉编码器。</p>
+  <ul class="features">
+    <li>CPU/GPU 混合推理，内存占用极低</li>
+    <li>支持 50+ 模型架构</li>
+    <li>社区活跃，日均有 20+ PR 合并</li>
+  </ul>
+  <div class="comment">
+    💬 <strong>编辑点评：</strong>本地推理的事实标准。本次更新对视觉模型的支持让它在多模态时代保持竞争力。
+  </div>
+</div>
+
+<!-- ═══════════════ 脚注 ═══════════════ -->
+<div class="footnotes">
+  <p id="ref-001">[^ref-001]: OpenAI Blog — "Introducing GPT-5o Audio Models"（2026-06-15）</p>
+  <p id="ref-002">[^ref-002]: Meta AI Blog — "VLM-3: Open Vision-Language Models"（2026-06-16）</p>
+</div>
+
+</body>
+</html>
