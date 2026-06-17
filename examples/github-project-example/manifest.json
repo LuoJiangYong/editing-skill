@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0.0",
+  "content_package_id": "github-project-2026-06-17-a1b2c3",
+  "metadata": {
+    "title": "本地运行大模型？这 5 个开源项目值得关注",
+    "subtitle": "从轻量推理到高性能部署，覆盖全场景的大模型本地化方案",
+    "date": "2026-06-17",
+    "created_at": "2026-06-17T16:00:00+08:00",
+    "content_type": "github-project",
+    "keywords": ["GitHub", "开源", "大模型", "本地推理", "模型部署", "llama.cpp", "Ollama"],
+    "language": "zh-CN",
+    "time_sensitivity": "evergreen",
+    "data_sources_used": ["gh_cli", "browser"],
+    "data_limitations": ""
+  },
+  "content_items": [
+    {
+      "id": "item-001",
+      "type": "github",
+      "title": "ggerganov/llama.cpp",
+      "summary": "通用本地大模型推理框架，支持 GGUF 格式，CPU/GPU 混合推理。社区最活跃的本地推理项目之一，支持 50+ 模型架构。",
+      "url": "https://github.com/ggerganov/llama.cpp",
+      "source_platform": {
+        "name": "GitHub",
+        "category": "code_host",
+        "owner": "ggerganov",
+        "channel": "",
+        "display": "GitHub / ggerganov"
+      },
+      "published_at": "",
+      "status": "selected",
+      "source_verified": true,
+      "link_accessible": "true",
+      "source_tier": "official",
+      "editorial_note": "本地推理的事实标准项目。Stars 数据为写入时的快照，实际使用时应从 GitHub 实时获取。",
+      "body_reference": "### 🚀 轻量级本地推理 > #### llama.cpp"
+    },
+    {
+      "id": "item-002",
+      "type": "github",
+      "title": "ollama/ollama",
+      "summary": "一键本地运行大模型的工具，支持 Llama、Mistral、Gemma 等主流模型。命令行 + REST API，上手门槛最低。",
+      "url": "https://github.com/ollama/ollama",
+      "source_platform": {
+        "name": "GitHub",
+        "category": "code_host",
+        "owner": "ollama",
+        "channel": "",
+        "display": "GitHub / ollama"
+      },
+      "published_at": "",
+      "status": "selected",
+      "source_verified": true,
+      "link_accessible": "true",
+      "source_tier": "official",
+      "editorial_note": "最适合新手的本地模型工具。Docker-like 体验。",
+      "body_reference": "### 🚀 轻量级本地推理 > #### Ollama"
+    },
+    {
+      "id": "item-003",
+      "type": "github",
+      "title": "vllm-project/vllm",
+      "summary": "高性能 LLM 推理和服务引擎，PagedAttention 技术大幅提升吞吐量。适合生产环境的模型服务化部署。",
+      "url": "https://github.com/vllm-project/vllm",
+      "source_platform": {
+        "name": "GitHub",
+        "category": "code_host",
+        "owner": "vllm-project",
+        "channel": "",
+        "display": "GitHub / vllm-project"
+      },
+      "published_at": "",
+      "status": "selected",
+      "source_verified": true,
+      "link_accessible": "true",
+      "source_tier": "official",
+      "editorial_note": "生产级推理服务的首选。PagedAttention 是核心创新。",
+      "body_reference": "### ⚡ 高性能服务化部署 > #### vLLM"
+    },
+    {
+      "id": "item-004",
+      "type": "github",
+      "title": "示例候选项目 D（已剔除）",
+      "summary": "这个项目因最近 8 个月无更新、README 仅一行而被剔除。展示 rejected status 的格式。",
+      "url": "",
+      "source_platform": {
+        "name": "GitHub",
+        "category": "code_host",
+        "owner": "example",
+        "channel": "",
+        "display": "GitHub / example"
+      },
+      "published_at": "",
+      "status": "rejected",
+      "source_verified": false,
+      "link_accessible": "no_link",
+      "source_tier": "unknown",
+      "editorial_note": "剔除原因：超过 6 个月无提交、README 不完整、无明确使用场景。本项目为示例，实际生产时应填写真实项目。"
+    }
+  ],
+  "body_markdown": "# 本地运行大模型？这 5 个开源项目值得关注\n\n> ⚠️ 本文件为示例（example）。项目信息为写入时的快照，实际数据（stars/最近更新等）会变化。实际生产时由 Agent 从 GitHub 实时获取并填充。\n\n## 一、推荐概览\n\n随着大模型部署需求激增，本地推理和模型服务化成为开发者关注的焦点。本期聚焦\"模型部署与推理优化\"方向，从 GitHub 筛选了 5 个活跃维护、文档齐全、社区健康的开源项目，按适用场景分为两组。\n\n本期推荐分组：\n- 🚀 轻量级本地推理（2 个项目）\n- ⚡ 高性能服务化部署（3 个项目）\n\n## 二、项目分组\n\n### 🚀 轻量级本地推理\n\n适合个人开发者、在消费级硬件上运行大模型。\n\n#### llama.cpp\n\n**一句话描述**：通用本地大模型推理框架，在消费级硬件上高效运行。\n\n| 属性 | 值 |\n|------|-----|\n| ⭐ Stars | 示例数据（实际从 GitHub 获取） |\n| 📝 语言 | C/C++ |\n| 📄 许可证 | MIT |\n| 🔄 最近更新 | 示例日期（实际从 GitHub 获取） |\n| 🔗 仓库 | [github.com/ggerganov/llama.cpp](https://github.com/ggerganov/llama.cpp) |\n\n**核心特性：**\n- CPU/GPU 混合推理，内存占用极低\n- 支持 50+ 模型架构\n- GGUF 格式量化支持，4-bit 到 8-bit\n\n**适用场景：** 想在笔记本电脑或普通台式机上运行开源大模型的个人开发者。\n\n**编辑点评：** 本地推理的事实标准。社区极其活跃，几乎每天都有新模型架构被支持。如果你只能选一个本地推理工具，选它。[^ref-001]\n\n#### Ollama\n\n**一句话描述**：一键本地运行大模型，命令行 + REST API，上手门槛最低。\n\n| 属性 | 值 |\n|------|-----|\n| ⭐ Stars | 示例数据（实际从 GitHub 获取） |\n| 📝 语言 | Go |\n| 📄 许可证 | MIT |\n| 🔄 最近更新 | 示例日期 |\n| 🔗 仓库 | [github.com/ollama/ollama](https://github.com/ollama/ollama) |\n\n**核心特性：**\n- `ollama run llama3` 一行命令启动\n- 类 Docker 的模型管理（pull / run / list）\n- REST API 兼容 OpenAI 格式\n\n**适用场景：** 想快速体验本地大模型、不想折腾编译和配置的开发者。\n\n**编辑点评：** 最适合新手的本地模型工具。如果你只是想试试本地跑模型的效果，Ollama 是最快的方式。但生产环境建议使用 vLLM 或 TGI。[^ref-002]\n\n### ⚡ 高性能服务化部署\n\n适合需要高吞吐量、低延迟的生产环境部署。\n\n#### vLLM\n\n**一句话描述**：高性能 LLM 推理引擎，PagedAttention 实现极致吞吐量优化。\n\n| 属性 | 值 |\n|------|-----|\n| ⭐ Stars | 示例数据 |\n| 📝 语言 | Python |\n| 📄 许可证 | Apache-2.0 |\n| 🔄 最近更新 | 示例日期 |\n| 🔗 仓库 | [github.com/vllm-project/vllm](https://github.com/vllm-project/vllm) |\n\n**核心特性：**\n- PagedAttention 注意力机制，KV 缓存效率提升 2-4 倍\n- 支持连续批处理（Continuous Batching）\n- 兼容 OpenAI API 接口\n\n**适用场景：** 需要为多个用户提供模型推理 API 服务的生产环境。\n\n**编辑点评：** 目前社区最活跃的生产级推理框架之一。如果你的场景是\"搭建一个模型 API 服务供多人调用\"，vLLM 是首选。[^ref-003]\n\n## 三、对比总览\n\n| 项目 | 定位 | 上手难度 | 适用场景 |\n|------|------|---------|---------|\n| llama.cpp | 通用本地推理 | 🟡 中等 | 个人开发、边缘设备 |\n| Ollama | 一键部署体验 | 🟢 简单 | 快速体验、原型验证 |\n| vLLM | 高性能服务 | 🟡 中等 | 生产环境 API 服务 |\n\n## 四、选择建议\n\n- **想快速体验本地大模型？** → Ollama，一行命令搞定。\n- **想在笔记本上跑开源模型？** → llama.cpp，资源占用最小。\n- **需要生产级推理 API 服务？** → vLLM，吞吐量最高。\n\n## 参考来源\n\n[^ref-001]: GitHub — [ggerganov/llama.cpp](https://github.com/ggerganov/llama.cpp)\n[^ref-002]: GitHub — [ollama/ollama](https://github.com/ollama/ollama)\n[^ref-003]: GitHub — [vllm-project/vllm](https://github.com/vllm-project/vllm)\n",
+  "references": [
+    {
+      "id": "ref-001",
+      "title": "ggerganov/llama.cpp",
+      "url": "https://github.com/ggerganov/llama.cpp",
+      "source_type": "github_repo",
+      "source_platform": {
+        "name": "GitHub",
+        "category": "code_host",
+        "owner": "ggerganov",
+        "channel": "",
+        "display": "GitHub / ggerganov"
+      },
+      "reliability": "high",
+      "access_status": "accessible"
+    },
+    {
+      "id": "ref-002",
+      "title": "ollama/ollama",
+      "url": "https://github.com/ollama/ollama",
+      "source_type": "github_repo",
+      "source_platform": {
+        "name": "GitHub",
+        "category": "code_host",
+        "owner": "ollama",
+        "channel": "",
+        "display": "GitHub / ollama"
+      },
+      "reliability": "high",
+      "access_status": "accessible"
+    },
+    {
+      "id": "ref-003",
+      "title": "vllm-project/vllm",
+      "url": "https://github.com/vllm-project/vllm",
+      "source_type": "github_repo",
+      "source_platform": {
+        "name": "GitHub",
+        "category": "code_host",
+        "owner": "vllm-project",
+        "channel": "",
+        "display": "GitHub / vllm-project"
+      },
+      "reliability": "high",
+      "access_status": "accessible"
+    }
+  ],
+  "editorial_notes": {
+    "selection_rationale": "选题理由：大模型本地部署是当前开发者最关注的方向之一。从轻量到生产级，覆盖不同需求的读者。",
+    "fact_check_notes": "所有 GitHub URL 可访问。Stars 数和最近更新日期为写入时的快照，实际使用时应从 GitHub 实时获取。",
+    "data_limitations": "仅覆盖了 GitHub 上的项目，未覆盖 GitLab/HuggingFace 等其他平台。社区评价仅来自编辑调研，未做大规模用户访谈。",
+    "risk_notes": "",
+    "editorial_decisions": "按'轻量级本地推理'和'高性能服务化部署'两组分组，帮助读者根据自身需求对号入座。对比表中省略了 TGI/TensorRT-LLM 等项目以控制篇幅，读者可根据需要扩展。"
+  }
+}

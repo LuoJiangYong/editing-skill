@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0.0",
+  "content_package_id": "hotspot-analysis-2026-06-17-e4f5a6",
+  "metadata": {
+    "title": "2026年6月第三周 AI 热点回顾",
+    "subtitle": "多模态竞赛加速，开源生态持续繁荣",
+    "date": "2026-06-17",
+    "created_at": "2026-06-17T15:00:00+08:00",
+    "content_type": "hotspot-analysis",
+    "keywords": ["AI", "多模态", "开源", "大模型", "语音AI", "视觉语言"],
+    "language": "zh-CN",
+    "time_sensitivity": "weekly",
+    "data_sources_used": ["web_search", "browser"],
+    "data_limitations": "本示例使用虚构数据。实际生产时需从真实来源填充。"
+  },
+  "content_items": [
+    {
+      "id": "item-001",
+      "type": "product",
+      "title": "示例：OpenAI 发布三款实时音频模型",
+      "summary": "示例数据 — 实际生产时从真实来源填充。OpenAI 发布 GPT-5o-mini-speech、GPT-5o-speech 和 GPT-5o-speech-pro。",
+      "url": "",
+      "source_platform": {
+        "name": "OpenAI Blog",
+        "category": "official",
+        "owner": "OpenAI",
+        "channel": "blog",
+        "display": "OpenAI 官方博客"
+      },
+      "published_at": "",
+      "status": "selected",
+      "source_verified": false,
+      "link_accessible": "no_link",
+      "source_tier": "official",
+      "editorial_note": "示例素材，链接和日期为虚构。实际生产时需填写真实数据。",
+      "body_reference": "## 二、1. 示例事件"
+    },
+    {
+      "id": "item-002",
+      "type": "product",
+      "title": "示例：Meta 开源 VLM 视觉语言模型",
+      "summary": "示例数据 — 实际生产时从真实来源填充。Meta 开源新一代视觉语言模型系列。",
+      "url": "",
+      "source_platform": {
+        "name": "Meta AI Blog",
+        "category": "official",
+        "owner": "Meta",
+        "channel": "blog",
+        "display": "Meta AI 官方博客"
+      },
+      "published_at": "",
+      "status": "selected",
+      "source_verified": false,
+      "link_accessible": "no_link",
+      "source_tier": "official",
+      "editorial_note": "示例素材。实际生产时需填写真实数据。",
+      "body_reference": "## 二、2. 示例事件"
+    },
+    {
+      "id": "item-003",
+      "type": "trend",
+      "title": "示例：国内厂商跟进多模态",
+      "summary": "示例数据 — 国内多家大模型厂商本周发布或更新多模态能力。",
+      "url": "",
+      "source_platform": {
+        "name": "综合来源",
+        "category": "tech_media",
+        "owner": "",
+        "channel": "",
+        "display": "多家科技媒体综合"
+      },
+      "published_at": "",
+      "status": "selected",
+      "source_verified": false,
+      "link_accessible": "no_link",
+      "source_tier": "media",
+      "editorial_note": "示例素材。实际生产时需填写真实来源和链接。",
+      "body_reference": "## 二、3. 示例事件"
+    }
+  ],
+  "body_markdown": "# 2026年6月第三周 AI 热点回顾\n\n> ⚠️ 本文件为示例（example），所有数据和事件为虚构。实际生产时由 Agent 从真实来源填充。\n\n## 一、本期概览\n\n本期覆盖 2026年6月9日至6月15日。本周 AI 领域延续多模态竞赛态势：OpenAI 发布三款实时音频模型，Meta 开源新一代视觉语言模型，国内多家厂商跟进多模态能力。\n\n🏷️ 本期关键词：多模态 · 开源 · 实时音频 · 视觉语言 · 模型竞赛\n\n## 二、热点排行\n\n### 1. 示例事件 A\n\n示例正文。实际生产时，此处为本周最重要事件的概述和细节分析。\n\n> 💡 编辑视角：示例信号块。实际生产时此处为编辑对事件背后意义的解读。\n\n### 2. 示例事件 B\n\n示例正文。实际生产时，此处为次要事件的概述和分析。\n\n### 3. 示例事件 C\n\n示例正文。实际生产时，此处为第三个热点事件。\n\n## 三、趋势分析\n\n### 🔥 示例趋势\n\n示例趋势分析。实际生产时从热点中提炼趋势信号，标注信号强度。\n\n## 四、下周展望\n\n- 示例预告事件 1\n- 示例预告事件 2\n\n## 参考来源\n\n[^ref-001]: 示例来源 — \"示例标题\"（示例日期）\n[^ref-002]: 示例来源 — \"示例标题\"（示例日期）\n",
+  "references": [
+    {
+      "id": "ref-001",
+      "title": "示例来源 A",
+      "url": "",
+      "source_type": "official_blog",
+      "source_platform": {
+        "name": "示例来源",
+        "category": "official",
+        "owner": "",
+        "channel": "blog",
+        "display": "示例来源"
+      },
+      "reliability": "high",
+      "access_status": "not_checked",
+      "note": "示例数据。实际生产时填充真实来源。"
+    },
+    {
+      "id": "ref-002",
+      "title": "示例来源 B",
+      "url": "",
+      "source_type": "article",
+      "source_platform": {
+        "name": "示例来源",
+        "category": "tech_media",
+        "owner": "",
+        "channel": "",
+        "display": "示例来源"
+      },
+      "reliability": "medium",
+      "access_status": "not_checked",
+      "note": "示例数据。"
+    }
+  ],
+  "editorial_notes": {
+    "selection_rationale": "示例选题理由。实际生产时说明为什么选择本周/本月这些热点。",
+    "fact_check_notes": "本文件为示例，所有数据为虚构。实际生产时需通过三项硬检查并记录交叉验证情况。",
+    "data_limitations": "示例文件。实际生产时记录本次采编的数据覆盖局限。",
+    "risk_notes": "示例文件。实际生产时标注可能引起争议的内容。",
+    "editorial_decisions": "示例文件。实际生产时记录结构选择、角度取舍、叙事线设计等关键决策。"
+  }
+}
