@@ -1,7 +1,7 @@
 ---
 name: editing-skill
 description: "When the user asks to edit AI/tech news, write daily/weekly/monthly reports, analyze topics, recommend GitHub projects or products, generate social insights, or create WeChat HTML articles — use this skill for structured news editing and format consumption."
-version: 0.1.0
+version: 0.2.0
 ---
 
 # Editing Skill — 路由中枢
