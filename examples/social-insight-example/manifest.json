@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0.0",
+  "content_package_id": "social-insight-2026-06-17-a1b2c3",
+  "metadata": {
+    "title": "AI 编程助手如何改变初级开发者的职业路径",
+    "subtitle": "从「写代码的人」到「审代码的人」——一个职业的静默重构",
+    "date": "2026-06-17",
+    "created_at": "2026-06-17T17:00:00+08:00",
+    "content_type": "social-insight",
+    "keywords": ["AI编程助手", "职业路径", "初级开发者", "教育", "就业", "社会洞察", "Copilot"],
+    "language": "zh-CN",
+    "time_sensitivity": "evergreen",
+    "data_sources_used": ["web_search", "browser"],
+    "data_limitations": "本示例使用虚构数据。实际生产时需从真实来源（行业报告、学术论文、招聘数据）获取数据并交叉验证。中国市场相关数据较少，分析可能偏向美国市场视角。"
+  },
+  "content_items": [
+    {
+      "id": "item-001",
+      "type": "data_point",
+      "title": "Stack Overflow 流量下降 42%",
+      "summary": "示例数据 — Stack Overflow 月活跃用户从 2024 年的 2700 万降至 2026 年的 1500 万，AI 编程助手被广泛认为是主要原因。",
+      "url": "",
+      "source_platform": {
+        "name": "Stack Overflow",
+        "category": "social",
+        "owner": "Stack Overflow",
+        "channel": "survey",
+        "display": "Stack Overflow Developer Survey 2026"
+      },
+      "published_at": "2026-05",
+      "status": "selected",
+      "source_verified": false,
+      "link_accessible": "no_link",
+      "source_tier": "official",
+      "editorial_note": "示例素材。现象锚定的关键数据点。",
+      "body_reference": "## 一、现象"
+    },
+    {
+      "id": "item-002",
+      "type": "data_point",
+      "title": "初级开发者任务构成变化调查（n=500）",
+      "summary": "示例数据 — 2026 年对 500 家科技公司的调查显示，使用 AI 编程助手的团队中，初级开发者编写基础代码的占比从 40% 降至 10%，审查 AI 代码的占比从 5% 升至 25%。",
+      "url": "",
+      "source_platform": {
+        "name": "示例来源",
+        "category": "tech_media",
+        "owner": "",
+        "channel": "report",
+        "display": "行业调查报告（2026）"
+      },
+      "published_at": "2026",
+      "status": "selected",
+      "source_verified": false,
+      "link_accessible": "no_link",
+      "source_tier": "media",
+      "editorial_note": "示例素材。职业影响分析的核心量化数据。实际生产时注明具体来源机构和样本方法。",
+      "body_reference": "## 二、2.1 职业影响"
+    },
+    {
+      "id": "item-003",
+      "type": "case_study",
+      "title": "大学计算机课程调整案例",
+      "summary": "示例数据 — CMU、Stanford、国内某 985 高校在 2025-2026 年调整 CS 课程，引入 AI 辅助编程环节或重新设计考核方式。",
+      "url": "",
+      "source_platform": {
+        "name": "综合来源",
+        "category": "academic",
+        "owner": "",
+        "channel": "",
+        "display": "各大学公告 + 教育媒体报道"
+      },
+      "published_at": "",
+      "status": "background",
+      "source_verified": false,
+      "link_accessible": "no_link",
+      "source_tier": "media",
+      "editorial_note": "示例素材。教育影响分析的案例支撑。实际生产时确认具体课程名称和调整细节。",
+      "body_reference": "## 二、2.2 教育影响"
+    },
+    {
+      "id": "item-004",
+      "type": "comparison",
+      "title": "软件开发成本结构对比",
+      "summary": "示例数据 — 传统 4 人团队 vs AI 协作 1.5 人等效团队的成本对比。人力成本下降 50-60%，但团队知识结构从金字塔变为柱状。",
+      "url": "",
+      "source_platform": {
+        "name": "示例来源",
+        "category": "tech_media",
+        "owner": "",
+        "channel": "analysis",
+        "display": "行业分析"
+      },
+      "published_at": "",
+      "status": "selected",
+      "source_verified": false,
+      "link_accessible": "no_link",
+      "source_tier": "media",
+      "editorial_note": "示例素材。经济影响分析的核心量化对比。",
+      "body_reference": "## 二、2.3 经济影响"
+    },
+    {
+      "id": "item-005",
+      "type": "opinion",
+      "title": "关于初级开发者职业未来的正面观点",
+      "summary": "示例数据 — 部分行业人士认为 AI 工具降低了编程入门门槛，使更多非 CS 背景的人能进入软件开发领域。初级开发者的定义正在从'能写代码的人'扩展为'能用代码解决问题的人'。",
+      "url": "",
+      "source_platform": {
+        "name": "综合来源",
+        "category": "social",
+        "owner": "",
+        "channel": "discussion",
+        "display": "Hacker News / 知乎 社区讨论"
+      },
+      "published_at": "",
+      "status": "background",
+      "source_verified": false,
+      "link_accessible": "no_link",
+      "source_tier": "community",
+      "editorial_note": "示例素材。提供与主流担忧相反的一线视角，用于平衡分析。社区来源，权威性有限。",
+      "body_reference": "## 四、讨论"
+    }
+  ],
+  "body_markdown": "# AI 编程助手如何改变初级开发者的职业路径\n\n> ⚠️ 本文件为示例（example），所有数据和案例为虚构。\n> 实际生产时由 Agent 从真实来源填充，遵循 workflows/social-insight.md 工作流。\n\n## 一、现象：正在发生什么\n... (见 body.md 全文)\n",
+  "references": [
+    {
+      "id": "ref-001",
+      "title": "Stack Overflow 2026 Developer Survey",
+      "url": "",
+      "source_type": "report",
+      "source_platform": {
+        "name": "Stack Overflow",
+        "category": "social",
+        "owner": "Stack Overflow",
+        "channel": "survey",
+        "display": "Stack Overflow Developer Survey"
+      },
+      "reliability": "high",
+      "access_status": "not_checked",
+      "note": "示例数据。实际生产时获取真实报告。"
+    },
+    {
+      "id": "ref-002",
+      "title": "AI Coding Assistants Impact on Junior Developer Roles（行业调查报告，2026, n=500）",
+      "url": "",
+      "source_type": "report",
+      "source_platform": {
+        "name": "示例来源",
+        "category": "tech_media",
+        "owner": "",
+        "channel": "report",
+        "display": "行业调查报告"
+      },
+      "reliability": "medium",
+      "access_status": "not_checked",
+      "note": "示例数据。实际生产时注明调查机构和样本方法。"
+    },
+    {
+      "id": "ref-003",
+      "title": "大学 CS 课程调整案例合集（CMU / Stanford / 国内高校，2025-2026）",
+      "url": "",
+      "source_type": "article",
+      "source_platform": {
+        "name": "综合来源",
+        "category": "academic",
+        "owner": "",
+        "channel": "",
+        "display": "各大学公告 + 教育媒体"
+      },
+      "reliability": "medium",
+      "access_status": "not_checked",
+      "note": "示例数据。实际生产时逐校确认课程调整细节。"
+    },
+    {
+      "id": "ref-004",
+      "title": "软件开发成本结构分析（行业分析，2026）",
+      "url": "",
+      "source_type": "article",
+      "source_platform": {
+        "name": "示例来源",
+        "category": "tech_media",
+        "owner": "",
+        "channel": "analysis",
+        "display": "行业分析"
+      },
+      "reliability": "medium",
+      "access_status": "not_checked",
+      "note": "示例数据。"
+    }
+  ],
+  "editorial_notes": {
+    "selection_rationale": "选题理由：AI 编程助手在 2026 年普及率大幅提升，关于'初级开发者是否还有未来'的讨论成为行业热点。本选题从职业/教育/经济三个维度分析技术变化的外部影响，展示社会洞察区别于通用专题的分析视角。",
+    "fact_check_notes": "本文件为示例，所有数据（Stack Overflow 流量、调查样本量、大学课程调整）均为虚构。实际生产时需从真实来源获取并交叉验证。",
+    "data_limitations": "示例文件。数据主要来自英文源和美国市场视角。中国市场相关数据和案例较少。学术引用有限——该话题的高质量同行评审研究仍在累积中。",
+    "risk_notes": "① 本话题涉及职业焦虑，表述需谨慎：不做'AI 将淘汰初级开发者'的断言，做'工作内容正在重构'的影响分析。② 赢家/输家分析可能引发争议——已标注为编辑判断并说明确定性。",
+    "editorial_decisions": "① 选择'职业+教育+经济'三个维度（社会洞察 6 维度中的 3 个），因为这三个维度素材最充分且最直接相关。② 在'教育影响'中引入计算器类比以降低理解门槛。③ 讨论章节诚实标注局限并邀请读者补充——社会洞察的文章应比技术分析更谦逊。④ 输出中所有'编辑判断'标签确保观点与事实分离。"
+  }
+}

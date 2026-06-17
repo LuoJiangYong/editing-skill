@@ -1,0 +1,195 @@
+{
+  "schema_version": "1.0.0",
+  "content_package_id": "product-recommendation-2026-06-17-a1b2c3",
+  "metadata": {
+    "title": "2026年6月 AI 视频生成工具推荐",
+    "subtitle": "从专业创作到快速尝鲜，5款工具覆盖全场景",
+    "date": "2026-06-17",
+    "created_at": "2026-06-17T17:00:00+08:00",
+    "content_type": "product-recommendation",
+    "keywords": ["AI视频生成", "Runway", "Pika", "MoonValley", "Pixverse", "视频工具", "产品推荐"],
+    "language": "zh-CN",
+    "time_sensitivity": "evergreen",
+    "data_sources_used": ["web_search", "browser"],
+    "data_limitations": "本示例使用虚构数据。实际生产时需从官网获取真实价格和功能信息，并收集真实用户评测。"
+  },
+  "content_items": [
+    {
+      "id": "item-001",
+      "type": "product",
+      "title": "Runway Gen-4 — 专业级 AI 视频生成",
+      "summary": "专业级 AI 视频生成平台，支持文本/图像/视频混合输入，精确控制每一帧。控制精度最高的 AI 视频工具。",
+      "url": "https://runwayml.com",
+      "source_platform": {
+        "name": "Runway",
+        "category": "official",
+        "owner": "RunwayML",
+        "channel": "",
+        "display": "Runway 官网"
+      },
+      "published_at": "",
+      "status": "selected",
+      "source_verified": false,
+      "link_accessible": "no_link",
+      "source_tier": "official",
+      "editorial_note": "示例素材。控制精度最高，适合专业创作者。上手曲线较陡。",
+      "body_reference": "### 🎬 专业创作者 > #### Runway Gen-4"
+    },
+    {
+      "id": "item-002",
+      "type": "product",
+      "title": "Pika (Pro + Free) — 创意导向 AI 视频生成",
+      "summary": "创意导向的 AI 视频生成工具，以'意外美学'著称。Pro 版适合创作者，Free 版适合尝鲜。",
+      "url": "https://pika.art",
+      "source_platform": {
+        "name": "Pika",
+        "category": "official",
+        "owner": "Pika Labs",
+        "channel": "",
+        "display": "Pika 官网"
+      },
+      "published_at": "",
+      "status": "selected",
+      "source_verified": false,
+      "link_accessible": "no_link",
+      "source_tier": "official",
+      "editorial_note": "示例素材。创意自由度最高，Pro 和 Free 两个层级覆盖不同人群。",
+      "body_reference": "### 🎬 专业创作者 > #### Pika Pro + 🚀 快速尝鲜 > #### Pika Free"
+    },
+    {
+      "id": "item-003",
+      "type": "product",
+      "title": "MoonValley — 叙事短片 AI 视频生成",
+      "summary": "专注叙事短片的 AI 视频生成工具，擅长保持长视频中的角色和场景一致性。",
+      "url": "",
+      "source_platform": {
+        "name": "MoonValley",
+        "category": "official",
+        "owner": "MoonValley",
+        "channel": "",
+        "display": "MoonValley 官网"
+      },
+      "published_at": "",
+      "status": "selected",
+      "source_verified": false,
+      "link_accessible": "no_link",
+      "source_tier": "official",
+      "editorial_note": "示例素材。角色一致性是最大优势，适合讲故事。渲染时间较长。",
+      "body_reference": "### 🎬 专业创作者 > #### MoonValley"
+    },
+    {
+      "id": "item-004",
+      "type": "product",
+      "title": "Pixverse — 社区驱动的 AI 视频平台",
+      "summary": "社区驱动的 AI 视频平台，海量模板 + 活跃创作者社区。模板最丰富。",
+      "url": "",
+      "source_platform": {
+        "name": "Pixverse",
+        "category": "official",
+        "owner": "Pixverse",
+        "channel": "",
+        "display": "Pixverse 官网"
+      },
+      "published_at": "",
+      "status": "selected",
+      "source_verified": false,
+      "link_accessible": "no_link",
+      "source_tier": "official",
+      "editorial_note": "示例素材。模板最丰富，社区活跃，适合初学者找灵感。生成质量上限不高。",
+      "body_reference": "### 🚀 快速尝鲜 > #### Pixverse"
+    },
+    {
+      "id": "item-005",
+      "type": "product",
+      "title": "示例候选产品 E（已剔除）",
+      "summary": "此产品因价格远高于同类（$99/月起）且功能无明显差异化而被剔除。",
+      "url": "",
+      "source_platform": {
+        "name": "示例",
+        "category": "other",
+        "owner": "example",
+        "channel": "",
+        "display": "示例产品"
+      },
+      "published_at": "",
+      "status": "rejected",
+      "source_verified": false,
+      "link_accessible": "no_link",
+      "source_tier": "unknown",
+      "editorial_note": "剔除原因：定价 $99/月 远高于同类产品（均价 $10-15/月），功能无明显差异化。本项目为示例，展示 rejected status 格式。"
+    }
+  ],
+  "body_markdown": "# 2026年6月 AI 视频生成工具推荐\n\n> ⚠️ 本文件为示例（example），所有产品信息为虚构。\n> 实际生产时由 Agent 从真实来源填充，遵循 workflows/product-recommendation.md 工作流。\n\n## 一、推荐概览\n... (见 body.md 全文)\n",
+  "references": [
+    {
+      "id": "ref-001",
+      "title": "Runway Gen-4",
+      "url": "https://runwayml.com",
+      "source_type": "official_blog",
+      "source_platform": {
+        "name": "Runway",
+        "category": "official",
+        "owner": "RunwayML",
+        "channel": "",
+        "display": "Runway 官网"
+      },
+      "reliability": "high",
+      "access_status": "not_checked",
+      "note": "示例数据。价格和功能截至 2026-06。"
+    },
+    {
+      "id": "ref-002",
+      "title": "Pika (Pro + Free)",
+      "url": "https://pika.art",
+      "source_type": "official_blog",
+      "source_platform": {
+        "name": "Pika",
+        "category": "official",
+        "owner": "Pika Labs",
+        "channel": "",
+        "display": "Pika 官网"
+      },
+      "reliability": "high",
+      "access_status": "not_checked",
+      "note": "示例数据。价格和功能截至 2026-06。"
+    },
+    {
+      "id": "ref-003",
+      "title": "MoonValley",
+      "url": "",
+      "source_type": "other",
+      "source_platform": {
+        "name": "MoonValley",
+        "category": "other",
+        "owner": "",
+        "channel": "",
+        "display": "MoonValley 官网"
+      },
+      "reliability": "medium",
+      "access_status": "not_checked",
+      "note": "示例数据。"
+    },
+    {
+      "id": "ref-004",
+      "title": "Pixverse",
+      "url": "",
+      "source_type": "other",
+      "source_platform": {
+        "name": "Pixverse",
+        "category": "other",
+        "owner": "",
+        "channel": "",
+        "display": "Pixverse 官网"
+      },
+      "reliability": "medium",
+      "access_status": "not_checked",
+      "note": "示例数据。"
+    }
+  ],
+  "editorial_notes": {
+    "selection_rationale": "选题理由：AI 视频生成工具在 2026 年爆发式增长，用户面临'选哪个'的问题。按'专业创作'和'快速尝鲜'两组分组，帮助读者根据自身需求对号入座。",
+    "fact_check_notes": "本文件为示例，所有产品名、价格和功能描述为虚构。实际生产时需验证每个产品的官网可访问性、价格准确性和功能描述。",
+    "data_limitations": "示例文件。仅覆盖 5 款产品，未覆盖 Synthesia/HeyGen（数字人方向）、CapCut（移动端）等差异化产品。实际生产时可扩展。",
+    "editorial_decisions": "① 按'专业创作者'和'快速尝鲜'分组，覆盖不同需求层次。② 对比表省略了'上手难度'列以控制宽度，详细信息在各产品卡片中。③ 选择建议中诚实指出未覆盖的产品方向（数字人），避免读者误以为这是全品类推荐。"
+  }
+}
